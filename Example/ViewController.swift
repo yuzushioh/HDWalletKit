@@ -7,22 +7,11 @@
 //
 
 import UIKit
-import WalletKit
+import HDWalletKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let entropy = Data(hex: "000102030405060708090a0b0c0d0e0f")
-        let mnemonic = Mnemonic.create(entropy: entropy)
-        // abandon amount liar amount expire adjust cage candy arch gather drum buyer
-        
-        let seed = Mnemonic.createSeed(mnemonic: mnemonic)
-        print(seed.toHexString())
-        
-        // By calling initialize, you can now access to your wallet.
-        let wallet = Wallet(seed: seed, network: .main)
-        print(wallet.generateAddress(at: 0))
     }
 }

@@ -1,0 +1,11 @@
+framework module HDWalletKit {
+    umbrella header "HDWalletKit.h"
+    
+    export *
+    module * { export * }
+    
+    explicit module Private {
+        header "Internal.h"
+        link "crypto"
+    }
+}

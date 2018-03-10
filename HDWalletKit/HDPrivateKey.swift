@@ -26,7 +26,7 @@ public struct HDPrivateKey {
     }
 
     public func hdPublicKey() -> HDPublicKey {
-        return HDPublicKey(hdPrivateKey: self, chainCode: chainCode, network: network, depth: depth, fingerprint: fingerprint, index: childIndex)
+        return HDPublicKey(hdPrivateKey: self, chainCode: chainCode, network: network, depth: depth, fingerprint: fingerprint, childIndex: childIndex)
     }
 
     public func extended() -> String {
@@ -38,7 +38,8 @@ public struct HDPrivateKey {
         extendedPrivateKeyData += chainCode
         extendedPrivateKeyData += UInt8(0)
         extendedPrivateKeyData += raw
-        return Base58.encode(extendedPrivateKeyData)
+        let checksum = Crypto.doubleSHA256(extendedPrivateKeyData).prefix(4)
+        return Base58.encode(extendedPrivateKeyData + checksum)
     }
 
     internal func derived(at index: UInt32, hardens: Bool = false) throws -> HDPrivateKey {

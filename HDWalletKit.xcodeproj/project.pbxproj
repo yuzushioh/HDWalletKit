@@ -172,10 +172,10 @@
 				AE354223202D46E400007B80 /* Base58Encode.swift */,
 				AE005729205390E1007AA468 /* HDWalletKitError.swift */,
 				AE00573B2053D251007AA468 /* DataConvertable.swift */,
+				AEBA90D81FFA21ED003EA2BA /* HDWalletKit.h */,
 				AED02DB52019B90A00B76CEC /* Internal.h */,
 				AED02DAC2019B83100B76CEC /* Internal.m */,
 				AE8387C12034962C00FAC88F /* HDWalletKit.modulemap */,
-				AEBA90D81FFA21ED003EA2BA /* HDWalletKit.h */,
 				AEBA90D91FFA21ED003EA2BA /* Info.plist */,
 			);
 			path = HDWalletKit;

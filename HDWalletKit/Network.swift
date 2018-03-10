@@ -52,4 +52,13 @@ public enum Network {
             return 0x04358394
         }
     }
+    
+    public var publicKeyPrefix: UInt32 {
+        switch self {
+        case .main:
+            return 0x0488b21e
+        case .test:
+            return 0x043587cf
+        }
+    }
 }

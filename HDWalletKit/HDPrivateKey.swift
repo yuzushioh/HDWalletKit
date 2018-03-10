@@ -8,7 +8,7 @@ public struct HDPrivateKey {
 
     public init(seed: Data, network: Network) {
         let output = Crypto.HMACSHA512(key: "Bitcoin seed".data(using: .ascii)!, data: seed)
-        self.raw = Data(hex: "0x") + output[0..<32]
+        self.raw = output[0..<32]
         self.chainCode = output[32..<64]
         self.depth = 0
         self.fingerprint = 0

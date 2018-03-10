@@ -20,7 +20,6 @@
 		AE8291A62018ADAF0047E0F0 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82919E2018ADAF0047E0F0 /* WordList.swift */; };
 		AE8387C020348C5500FAC88F /* Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02DAC2019B83100B76CEC /* Internal.m */; };
 		AE8387C320349AD700FAC88F /* Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AED02DB52019B90A00B76CEC /* Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AE90A0781FFA698D005ED7AF /* EthereumKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90A0771FFA698D005ED7AF /* EthereumKitTests.swift */; };
 		AE90A07A1FFA698D005ED7AF /* HDWalletKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA90D51FFA21ED003EA2BA /* HDWalletKit.framework */; };
 		AEBA90DA1FFA21ED003EA2BA /* HDWalletKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBA90D81FFA21ED003EA2BA /* HDWalletKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEBA90F31FFA2C6A003EA2BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA90F21FFA2C6A003EA2BA /* AppDelegate.swift */; };
@@ -30,6 +29,8 @@
 		AEBA90FD1FFA2C6A003EA2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBA90FB1FFA2C6A003EA2BA /* LaunchScreen.storyboard */; };
 		AEBA91041FFA2C74003EA2BA /* HDWalletKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA90D51FFA21ED003EA2BA /* HDWalletKit.framework */; };
 		AEBA91051FFA2C74003EA2BA /* HDWalletKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA90D51FFA21ED003EA2BA /* HDWalletKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AED6F43620541155004A280F /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0057392053D139007AA468 /* CryptoSwift.framework */; };
+		AED6F43720541155004A280F /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE0057392053D139007AA468 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AEBA91051FFA2C74003EA2BA /* HDWalletKit.framework in Embed Frameworks */,
+				AED6F43720541155004A280F /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +86,6 @@
 		AE82919E2018ADAF0047E0F0 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		AE8387C12034962C00FAC88F /* HDWalletKit.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = HDWalletKit.modulemap; sourceTree = "<group>"; };
 		AE90A0751FFA698D005ED7AF /* HDWalletKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDWalletKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE90A0771FFA698D005ED7AF /* EthereumKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumKitTests.swift; sourceTree = "<group>"; };
 		AE90A0791FFA698D005ED7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEBA90D51FFA21ED003EA2BA /* HDWalletKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDWalletKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBA90D81FFA21ED003EA2BA /* HDWalletKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWalletKit.h; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBA91041FFA2C74003EA2BA /* HDWalletKit.framework in Frameworks */,
+				AED6F43620541155004A280F /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +133,6 @@
 		AE90A0761FFA698D005ED7AF /* HDWalletKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE90A0771FFA698D005ED7AF /* EthereumKitTests.swift */,
 				AE90A0791FFA698D005ED7AF /* Info.plist */,
 			);
 			path = HDWalletKitTests;
@@ -360,7 +361,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE90A0781FFA698D005ED7AF /* EthereumKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

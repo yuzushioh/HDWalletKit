@@ -1,0 +1,16 @@
+framework module HDWalletKit {
+    umbrella header "HDWalletKit.h"
+    
+    export *
+    module * { export * }
+    
+    explicit module Private {
+        header "Internal.h"
+        link "crypto"
+    }
+}
+
+module HDWalletKit.Swift {
+    header "HDWalletKit-Swift.h"
+    requires objc
+}

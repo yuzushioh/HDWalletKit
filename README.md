@@ -21,5 +21,17 @@ do {
 - Mnemonic recovery phrease in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 - [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)/[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) HD wallet
 
+## Requirements
+
+- Swift 4.0 or later
+- iOS 8.0 or later
+
+## Installation
+
+#### [Carthage](https://github.com/Carthage/Carthage)
+
+- Insert `github "yuzushioh/HDWalletKit"` to your Cartfile.
+- Run `carthage update --platform ios`.
+
 ## License
 WalletKit is released under the [MIT License](LICENSE.md).
